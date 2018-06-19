@@ -82,7 +82,7 @@ Given a set of realizations $\mathbf{d} = \\\{ x\_i \\\}$ at the bins, **inferen
 For example, following the principle of maximum likelihood estimation, we have
 $$\hat{\theta} = \arg \max\_\theta \prod_{x\_i \in \mathbf{d}} p(x\_i | \theta).$$
 
-In general, when $p(x\_i | \theta)$ can be evaluated, this problem can be solved using standard optimization algorithms.
+In general, when $p(x\_i | \theta)$ can be evaluated, this problem can be solved either analytically or using  optimization algorithms.
 
 ---
 
