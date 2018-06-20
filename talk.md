@@ -733,11 +733,12 @@ class: middle
 
 ---
 
-# Other algorithms
+class: middle
 
----
-
-# Conclusions
+- Machine learning provides several solutions for simulation-based likelihood-free inference.
+- Cᴀʀʟ defines an optimal solution for likelihood ratio estimation, which is itself sufficient for inference.
+- It is often possible to mine the joint likelihood, the joint likelihood ratio or the joint score.
+- These values make it possible to perform likelihood-free inference effectively.
 
 ---
 
