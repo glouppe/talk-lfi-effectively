@@ -281,6 +281,21 @@ Bolognesi et al, 2012 ([arXiv:1208.4018](https://arxiv.org/pdf/1208.4018.pdf))
 
 ---
 
+# (Some) established solutions
+
+- Histograms of observables     
+    - Summary statistics
+- Approximate Bayesian Computation
+    - Summary statistics.
+- Calibrated classifiers (Cᴀʀʟ)
+- Neural density estimation
+    - Density networks, autoregressive models, normalizing flows,  etc.
+- Matrix Element Method
+    - Neglect or approximate shower+detector, explicitly calculate integral
+    $$\hat{p}(x|\theta)=\int p(z\_p|\theta) \tilde{p}(x|z\_p) dz\_p$$
+
+---
+
 class: middle
 
 .center.width-90[![](figures/carl.png)]
@@ -293,10 +308,10 @@ Refs: Cranmer et al, 2016 ([arXiv:1506.02169](https://arxiv.org/pdf/1506.02169.p
 
 class: middle
 
-Key insights:
+.bold[Key insights]:
 
 - The likelihood ratio is *sufficient* for maximum likelihood estimation.
-- Evaluating the likelihood ratio does **not** require evaluating the individual likelihoods.
+- Evaluating the likelihood ratio **does not** require evaluating the individual likelihoods.
 
 ---
 
@@ -318,7 +333,7 @@ class: middle
 
 .center.width-40[![](figures/ptor.png)]
 
-Evaluating the likelihood ratio does **not** require evaluating the individual likelihoods:
+Evaluating the likelihood ratio **does not** require evaluating the individual likelihoods:
 
 - From $p(x|\theta\_0)$ and $p(x|\theta\_1)$ we can evaluate $r(x|\theta\_0, \theta\_1)$.
 - However, from $r(x|\theta\_0, \theta\_1)$ the individual likelihoods $p(x|\theta\_0)$ and $p(x|\theta\_1)$ cannot be reconstructed.
@@ -651,7 +666,7 @@ $$p(x|\theta) = \underbrace{\iiint}\_{\text{intractable}} p(z\_p|\theta) p(z\_s|
 
 class: middle
 
-Key insights:
+.bold[Key insights]:
 - The distribution of parton-level four-momenta
 $$p(z\_p|\theta) = \frac{1}{\sigma(\theta)} \frac{d\sigma(\theta)}{dz\_p},$$
 where $\sigma(\theta)$ and $\tfrac{d\sigma(\theta)}{dz\_p}$ are the total and differential cross sections, is tractable.
@@ -737,8 +752,7 @@ class: middle
 
 - Machine learning provides several solutions for simulation-based likelihood-free inference.
 - Cᴀʀʟ defines an optimal solution for likelihood ratio estimation, which is itself sufficient for inference.
-- It is often possible to mine the joint likelihood, the joint likelihood ratio or the joint score.
-- These values make it possible to perform likelihood-free inference effectively.
+- It is often possible to mine the joint likelihood, the joint likelihood ratio or the joint score, which enables effective likelihood-free inference.
 
 ---
 
