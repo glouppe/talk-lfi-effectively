@@ -288,6 +288,7 @@ Bolognesi et al, 2012 ([arXiv:1208.4018](https://arxiv.org/pdf/1208.4018.pdf))
 - Approximate Bayesian Computation
     - Summary statistics.
 - Calibrated classifiers (Cᴀʀʟ)
+    - Optimal summary statistics.
 - Neural density estimation
     - Density networks, autoregressive models, normalizing flows,  etc.
 - Matrix Element Method
@@ -729,6 +730,23 @@ Johann Brehmer
 Johann Brehmer
 ]
 
+???
+
+Estimated expected likelihood ratio based on a traditional doubly differential
+histogram analysis (orange dotted) and the new Rascal technique (red dashed).
+
+We show a line in
+parameter space with particularly large difference between the methods.
+
+The grey dotted line
+marks the expected exclusion limit at 95% CL according to asymptotics.
+
+- The vertical arrow shows
+how much more data the histogram approach requires to constrain the same parameter point with
+the same significance.
+- The horizontal arrow demonstrates the increased physics reach of the
+machine-learning-based method.  
+
 ---
 
 # Stronger bounds
@@ -739,6 +757,12 @@ Johann Brehmer
 .footnote[Credits:
 Johann Brehmer
 ]
+
+???
+
+Expected exclusion contours at 68% CL (innermost lines),
+95% CL, and 99.7% CL (outermost lines) based on the Neyman construction. In both panels, we
+assume 36 observed events and the SM to be true.
 
 ---
 
